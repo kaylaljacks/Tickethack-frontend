@@ -8,43 +8,41 @@
 </head>
 <body>
     
-    <div id="background">
-    </div>
         <div id="header"> 
             <p>Tickethack </p>
-            <p>Cart</p>
-            <p>Bookings</p>
-        </div>
-
-        <div id="logo"></div>
-        
-        </div>
-     
-    <h1>
-     Enjoy the world effortlessly by train!
-    </h1>
-
-    <h2>
-    Compare, book, and enjoy cheap prices for train tickets: Your journey starts on Tickethack!
-</h2>
-      
-            <div id="container">
-                <div id="content-container"></div>
-                     <div id="content-left"> 
-                        <p>Departures</p> 
-                    <p>Arrivals</p>
-                    <p>Date</p>
-                <P>Search</P>
-            </div>
-                     <div id="content-right">
-                        <img src="images/train.png"/>
-                        <P>It's time to book your trip!</P>
-                     </div>
-                     
+            <a href="cart.html">Cart</a>
+            <a href="bookings.html">Bookings</a>
         </div>
     </div>
-    
-      </div>
+
+    <div id="container">
+        <div>
+            <h1>
+             Enjoy the world effortlessly by train!
+            </h1>
+        
+            <h2>
+                Compare, book, and enjoy cheap prices for train tickets: Your journey starts on Tickethack!
+            </h2>
+        </div>
+        <div id="content-container">
+             <div id="content-left"> 
+                <input type="text" id="departure" name="departures" required placeholder="Departure"  />
+                
+                   <input type="text" id="arrival" name="arrivals" required placeholder="Arrival" />
+                   
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="trip-date"  value="2023-07-22" min="2018-01-01" max="2024-12-31" />
+                    
+                    <input type="submit" id="search" value="Search" />
+            </div>
+            <div id="content-right">
+                <img src="images/train.png" onclick="this.src='images/notfound.png'">
+                <p>It's time to book your trip!</p>
+
+            </div>
+        </div>
+    </div>
 
 
       <script src="script.js"></script>
